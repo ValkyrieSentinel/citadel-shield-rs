@@ -36,10 +36,13 @@ fn try_citadel_shield(ctx: XdpContext) -> Result<u32, ()> {
     Ok(xdp_action::XDP_PASS)
 }
 
-fn log_event(address: &u32, action: u32) {
-    let info = PacketInfo { action };
+fn log_event(address: u32, action: u32) {
+    let info = PacketInfo { 
+        ipv4_address: address, 
+        action 
+    };
     unsafe {
-        let _ = EVENTS.insert(address, &info, 0);
+        let _ = EVENTS.insert(&address, &info, 0);
     }
 }
 
