@@ -22,10 +22,7 @@ Tech Stack
 
     UI: Ratatui / Crossterm
 
-Preview
 
-(Here you should definitely upload that screenshot you showed me! Use this syntax: ![Dashboard](link-to-your-image.png))
-How to run
 
     Note: You need a Linux machine with eBPF support and bpf-linker installed.
 
