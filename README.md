@@ -1,4 +1,4 @@
-Citadel Shield 🛡️
+Citadel Shield 
 
 This is a low-level network monitoring and filtering tool built with Rust and eBPF (Aya). It intercepts network packets at the XDP level (the fastest way possible in Linux) and visualizes everything in a terminal-based dashboard.
 Why I built this
